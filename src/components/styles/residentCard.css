@@ -1,0 +1,82 @@
+.residentcard {
+    background-color: #072226;
+    width: 280px;
+    margin: 0 25px;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.residentcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #000607b2;
+    transition: transform .5s,
+                box-shadow .5s;
+}
+
+.residentcard__img {
+    position: relative;
+}
+
+.residentcard__status{
+    background-color: #072226;
+    border-radius: 0 6px 6px 0;
+    padding: 4px 35px 4px 5px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    position: absolute;
+    top: 9%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.residentcard__circle {
+    background-color: #888787;
+    width: 8.5px;
+    height: 8.5px;
+    border-radius: 50%;
+}
+
+.Dead {
+    background-color: #ff0000;
+}
+
+.Alive{
+    background-color: #008000;
+}
+
+.residentcard__name {
+    margin: 12px;
+}
+
+.residentcard__separator {
+    width: 80%;
+    margin-bottom: 5px ;
+}
+
+.residentcard__list {
+    margin: 10px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.residentcard__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.residentcard__item span:first-child {
+    padding-left: 20px;
+    font-weight: 400;
+    color: #7e7e7e;
+}
+
+.residentcard__item span:last-child {
+    font-weight: 400;
+}

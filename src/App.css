@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ----- reset ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+html {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 200;
+}
+
+img { 
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: inh erit;
+  text-align: center;
+}
+
+button {
+  border: none;
+}
+
+/* ----- App ----- */
+.app {
+  background-color: #05292e;
+  min-height: 100vh;
+  overflow: hidden;
+  }
+  
+  .app__container {
+    padding: 20px 0px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px 0;
+    }
+    
+.app__header{
+  background: linear-gradient(0deg, #072226a6, #00000019), url(..//assets/Bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 52%;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #000;
+  padding: 20px 20px 40px;
+  margin: 20px 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.app__header:hover {
+  transform: scale(1.02);
+  background: linear-gradient(0deg, #07222696, #00000016), url(..//assets/Bg-hover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 46%;
+  box-shadow: 0 0 10px #000;
+  transition: transform 1s,
+              background 1s,
+              box-shadow 1s;
+}
+
+.app__header-content {
+  background-color: #072226ec;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #0a4a53;
+  padding-bottom: 15px;
+  width: fit-content;
+  gap: 5px;
+}
+
+.app__title {
+  text-align: center;
+  padding: 20px;
+}
+
+.app__form {
+  display: flex;
+  justify-content: center;
+}
+
+.app__form-input {
+  border-radius: 8px 0 0 8px;
+}
+
+.app__form-btn {
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 0 10px 10px 0;
+  padding: 5px 15px;
+  background-color: #71a821;
+  color: inherit;
+}
+
+.app__error {
+  background-color: #072226;
+  box-shadow: 2px 2px 3px #000607a4;
+  border-radius: 15px;
+  width: 600px;
+  height: 400px;
+  max-width: 85%;
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (width < 700px) {
+  .app__header {
+    background: linear-gradient(0deg, #072226a6, #00000019);
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .app__header-content {
+    width: 95%;
+    min-width: 256px;
+    box-shadow: 0 0 0 #0a4a5300;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .app__header:hover {
+    transform: scale(1.02);
+    background: linear-gradient(0deg, #07222696, #00000016);
+    box-shadow: 0 0 10px #000;
+    transition: box-shadow 1s;
+  }
+}
