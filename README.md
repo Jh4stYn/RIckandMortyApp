@@ -1,8 +1,30 @@
-# React + Vite
+# Rick and Moerty App
+Esta es una aplicación web que permite a los usuarios ver a todos los personajes de la serie "Rick and Morty" por su locación utilizando la API de Rick and Morty. La aplicación proporciona información detallada sobre cada locación y sus residentes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funcionalidades
 
-Currently, two official plugins are available:
+- Buscar locaciones por ID (del 1 al 126).
+- Mostrar detalles de la locación seleccionada:
+  - Nombre de la locación.
+  - Tipo de locación.
+  - Dimensión a la que pertenece.
+  - Cantidad de residentes.
+- Mostrar detalles de cada residente:
+  - Nombre del residente.
+  - Imagen del residente.
+  - Estado del residente.
+  - Lugar de origen.
+  - Cantidad de episodios donde aparece.
+    
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- React.js
+- CSS 
+
+### Backend
+- JavaScript
+
+### API
+- [Rick and Morty API](https://rickandmortyapi.com/documentation/#get-a-single-location)
+
